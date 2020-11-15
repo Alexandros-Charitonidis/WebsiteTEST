@@ -361,7 +361,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		line-height: 1.2;
 	}
 
@@ -880,7 +880,7 @@ input, select, textarea {
 	}
 
 		.image.filtered:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 125, 0.116) 50%, rgba(255, 228, 180, 0.25));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
 			pointer-events: none;
 			content: '';
