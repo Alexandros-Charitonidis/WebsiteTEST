@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1066,6 +1067,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5rem;
+			
 		}
 
 		ul.alt {
@@ -1113,6 +1115,7 @@ input, select, textarea {
 		ul.actions li {
 			padding: 0 0 0 0.75rem;
 			vertical-align: middle;
+			scroll-behavior: smooth;
 		}
 
 		ul.actions.special {
@@ -1496,7 +1499,7 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border: 0;
-		border-radius: 0.25rem;
+		border-radius: 2rem;
 		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 		color: rgba(255, 255, 255, 0.875) !important;
 		cursor: pointer;
@@ -1615,6 +1618,21 @@ input, select, textarea {
 			line-height: 1.875rem;
 			padding: 0 1.25rem 0 1.4rem;
 		}
+		
+		input[type="submit"].fixed,
+		input[type="reset"].fixed,
+		input[type="button"].fixed,
+		button.fixed,
+		.button.fixed {
+			
+			padding: 0 1.25rem 0 1.4rem;
+			position: fixed;
+			bottom: 16px;
+			right: 30px;
+			width: 30px;
+			height: 50px;
+			transition: all 1.4s;
+		}
 
 		input[type="submit"].large,
 		input[type="reset"].large,
@@ -1698,6 +1716,8 @@ input, select, textarea {
 			cursor: default;
 			opacity: 0.5;
 		}
+
+		/* To Top Button*/
 
 /* Gallery */
 
@@ -1962,6 +1982,11 @@ input, select, textarea {
 		.gallery .modal .inner img {
 			max-width: 100vw;
 		}
+		.button.fixed{
+			background-color: white;
+			box-shadow: none;
+			color: #2e2b37 !important;
+		}
 
 	}
 
@@ -2159,6 +2184,11 @@ input, select, textarea {
 
 		.gallery .group .image {
 			height: 12.5rem;
+		}
+		.button{
+			width:18vw;
+			font-size: 0.5rem;	
+			overflow: hidden;		
 		}
 
 	}
