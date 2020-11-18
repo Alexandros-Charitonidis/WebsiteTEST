@@ -2186,9 +2186,9 @@ input, select, textarea {
 			height: 12.5rem;
 		}
 		.button{
-			width:18vw;
-			font-size: 0.5rem;	
-			overflow: hidden;		
+			width:20vw;
+			font-size: .5rem;
+					
 		}
 
 	}
