@@ -1631,7 +1631,8 @@ input, select, textarea {
 			right: 30px;
 			width: 30px;
 			height: 50px;
-			transition: all 1.4s;
+			z-index: 10;
+			/*transition: all 1.4s;*/
 		}
 
 		input[type="submit"].large,
@@ -1982,11 +1983,7 @@ input, select, textarea {
 		.gallery .modal .inner img {
 			max-width: 100vw;
 		}
-		.button.fixed{
-			background-color: white;
-			box-shadow: none;
-			color: #2e2b37 !important;
-		}
+		
 
 	}
 
@@ -2185,12 +2182,6 @@ input, select, textarea {
 		.gallery .group .image {
 			height: 12.5rem;
 		}
-		.button{
-			width:20vw;
-			font-size: .5rem;
-					
-		}
-
 	}
 
 /* Panel */
