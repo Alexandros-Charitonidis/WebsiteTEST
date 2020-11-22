@@ -1112,6 +1112,10 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
+	ul.actions.left{
+		justify-content: center;
+	}
+
 		ul.actions li {
 			padding: 0 0 0 0.75rem;
 			vertical-align: middle;
@@ -1632,7 +1636,31 @@ input, select, textarea {
 			width: 30px;
 			height: 50px;
 			z-index: 10;
+			background-color: white;
+			box-shadow: none;
+			color: #2e2b37 !important;
+			transition: 0.8s;
+		
 			/*transition: all 1.4s;*/
+		}
+
+		input[type="submit"].fixed:hover,
+		input[type="reset"].fixed:hover,
+		input[type="button"].fixed:hover,
+		button.fixed:hover,
+		.button.fixed:hover {
+
+			background-color: #ffe4b4;
+		}
+
+		input[type="submit"].fixed:active,
+		input[type="reset"].fixed:active,
+		input[type="button"].fixed:active,
+		button.fixed:active,
+		.button.fixed:active {
+
+			bottom: 50px;
+			background-color: #fdd997;
 		}
 
 		input[type="submit"].large,
@@ -1983,7 +2011,11 @@ input, select, textarea {
 		.gallery .modal .inner img {
 			max-width: 100vw;
 		}
-		
+		.button.fixed{
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+			color: rgba(255, 255, 255, 0.875) !important;
+		}
 
 	}
 
@@ -2182,6 +2214,8 @@ input, select, textarea {
 		.gallery .group .image {
 			height: 12.5rem;
 		}
+
+
 	}
 
 /* Panel */
