@@ -1,84 +1,926 @@
-<!DOCTYPE HTML>
-<!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Alexandros Charitonidis - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/Favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/Favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/Favicons/favicon-16x16.png">
-		<link rel="manifest" href="/images/Favicons/site.webmanifest">
-	</head>
-	<body class="is-preload">
-		
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-				
-				<!-- Wrapper -->
-					<div id="wrapper">
-<!--
-						<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
-							<g fill="none" fill-rule="evenodd">
-								<rect width="70" height="118" x="1.5" y="1.5" stroke="#3B3C36" stroke-width="3" rx="36"/>
-								<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
-							</g>
-						</svg>
-					
--->
+<!DOCTYPE html>
+<html lang="en">
 
-						<!-- Filter: https://css-tricks.com/gooey-effect/ -->
-						
+<head>
+    <!--
+     - Roxy: Bootstrap template by GettTemplates.com
+     - https://gettemplates.co/roxy
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roxy by GetTemplates.co</title>
+    <meta name="description" content="Roxy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-						<!-- Panel (Banner) -->
-							<section class="panel banner right" id=mainpage>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-								<div class="content color4 span-4-75">
-									<h1 style="text-align:center;" class="major">Hello, my name
-									is <span class="animate"></span></h1>
-									<p style="text-align:justify">I am a recent graduate from University of Glasgow with a Mechatronics Engineering degree equipped with a broad skillset covering important facets of the mechatronics branch.</p>
-									<p style="text-align:justify"> In this website you can find a variety of works and projects I have completed throughout my studies.</a></p>
-									<ul class="actions left">
-										<li><a href="aboutme.html" class="button primary color1 resizable icon ">Read about me</a></li>
-										<li><a href="#contact" class="button primary color1 resizable icon">View my portfolio</a></li>
-									</ul>
-								</div>
-								<div class="image unfiltered span-1-75" data-position="30% 30%">
-									<img src="images/profilepicround.png" alt="" />
-								</div>
-							</section>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
 
-					</div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body  data-target="#navbar" class="static-layout">
+	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+            <h3 class="font-weight-bolder mb-0">ALEX</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a id="side-search-open" class="nav-link" href="#">
+                        <span class="lnr lnr-magnifier"></span>
+                    </a>
+                </li>
+                 <li class="nav-item only-desktop">
+                    <a class="nav-link" id="side-nav-open" href="#">
+                        <span class="lnr lnr-menu"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	
+	<div class="sidenav-content">
+		<p>
+			Kuncen WB1, Wirobrajan 10010, DIY
+		</p>
+		<p>
+			<span class="fs-16 primary-color">(+68) 120034509</span>
+		</p>
+		<p>info@yourdomain.com</p>
+	</div>
+</div><div id="side-search" class="sidenav">
+	<a href="javascript:void(0)" id="side-search-close">&times;</a>
+	<div class="sidenav-content">
+		<form action="">
+
+			<div class="input-group md-form form-sm form-2 pl-0">
+			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+			  <div class="input-group-append">
+			    <button class="input-group-text red lighten-3" id="basic-text1">
+			    	<span class="lnr lnr-magnifier"></span>
+			    </button>
+			  </div>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-			<script>
-				var typed = new Typed('.animate',{
-					strings: [
-						"Alexandros and welcome to my portfolio"
-					],
-					typeSpeed: 50,
-					backSpeed: 50,
-					loop: false
+		</form>
+	</div>
+	
+</div>	<div class="jumbotron d-flex align-items-center" style="background-image: url(img/ProfilePicture.jpg)">
+  <div class="container text-center">
+    <h1 class="display-1 mb-4">AL<br>EX</h1>
+  </div>
+  <div class="rectangle-1"></div>
+  <div class="rectangle-2"></div>
+  <div class="rectangle-transparent-1"></div>
+  <div class="rectangle-transparent-2"></div>
+ 
+  <div class="triangle triangle-1">
+  	<img src="img/gear-256.png" alt="">
+  </div>
+  <div class="triangle triangle-2">
+  	<img src="img/battery-5-256.png" alt="">
+  </div>
+  <div class="triangle triangle-3">
+  	<img src="img/electronics-256.png" alt="">
+  </div>
+  <div class="triangle triangle-4">
+  	<img src="img/icons8-comparator-90.png" alt="">
+  </div>
+  <div class="triangle triangle-5">
+    <img src="img/icons8-tyre-64.png" alt="">
+  </div>
+  <div class="triangle triangle-6">
+    <img src="img/icons8-robot-80.png" alt="">
+  </div> 
+   <div class="triangle triangle-7">
+    <img src="img/icons8-solidworks-50.png" alt="">
+  </div>
 
-				});
-								
-			</script>
+</div>	
 
-		
-	</body>
+<!-- Features Section-->
+
+<section id="features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="animate"></span>
+                </h2>
+                <p class="section-sub-title">I am a recent graduate from University of Glasgow with a Mechatronics Engineering degree  <br> equipped with a broad skillset covering important facets of the mechatronics branch. <br> In this website you can find a variety of works and projects <br> I have completed throughout my studies.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Features Holder-->
+                <div class="col-md-10 offset-md-1 features-holder">
+                    <div class="row">
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <img class="img-responsive" src="img/profilepicround.png" alt=" ">
+                            
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fas fa-robot fa-2x"></i>
+                                </div>
+                                <h4>Pixel Perfect</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fas fa-microchip fa-2x"></i>
+                                </div>
+                                <h4>Full Support</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-magic-wand fs-40"></i>
+                                </div>
+                                <h4>Clean Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-clock fs-40"></i>
+                                </div>
+                                <h4>Ontime Project</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-thumbs-up fs-40"></i>
+                                </div>
+                                <h4>Built with SASS</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                    </div>
+                </div>
+                <!-- End of Features Holder-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section-->	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/EducationBG.jpg);">
+
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center text-white">
+
+                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
+                            <h4 class="mb-4">Junior Mechatronics Engineer.</h4>
+                            <p>During my undergraduate degree, I have successfully completed multiple projects involving mechanical and mechatronic systems for the optimisation of electric vehicles and automotive electronics (EVAEL research lab). Besides, I had the opportunity to develop a variety of skills which finally led me to the fulfilment of my internship as a laboratory assistant.
+                                <br> My research master dissertation involved the study of capacitive tactile sensors with state-of-the-art materials for e-skin applications. In conjuction with the technical skills I have acquired, the whole process allowed me to work with the Bendable Electronics and Sensing Technologies group on various custom made additive manufacturing technologies.<br> I have strong expertise in embedded hardware and fueled by my curiosity, I am eager to continuously progress my skills and explore all aspects of engineering.</p>
+                            <button onclick="location.href='/img/Alexandros_Charitonidis_CV (1).pdf';" type="button" class="btn btn-outline-primary">DOWNLOAD CV
+
+                            </button>
+                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
+                            <img class="my-5" src="img/blue_minimal_wavy_business_card.png" alt="">
+                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                    </div><!--/ .featurettes-item -->
+
+                </div><!--/ .col-md-12 -->
+
+            </div><!--/ .row -->
+        </div>
+    </div><!--/ .container -->
+
+</section>	<section id="section-featurettes" class="featurettes">
+
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
+                            <img class="my-5" src="img/blue_minimal_wavy_business_card.png" alt="">
+
+                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
+
+
+                            <h4 class="mb-4">Mechatronics, MSc</h4>
+                            <p><b>Thesis:</b> Design and Simulation of a 3D Printable Capacitive Tactile Sensor for a Smart Fingertip.</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Real-Time embedded programming 100%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Advanced Manufacturing 95%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Analogue and Digital Control 85%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Digital Signal Processing 80%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Robotics 75%</div>
+                            </div>
+
+                            <h4 class="mb-4">Automotive Engineering, BSc</h4>
+                            <p><b>Thesis:</b> Remodelling a regular bike to an electrically assisted bicycle: Design and implementation of a power electric kit.</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Mechanical design with CAD/CAM/CAE 100%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Mechatronic Systems 95%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Electronics (automotive and Non) 85%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Materials and manufacturing 75%</div>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">MATLAB / LABView 70%</div>
+                            </div>
+                          
+                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                    </div><!--/ .featurettes-item -->
+
+                </div><!--/ .col-md-12 -->
+                
+
+            </div><!--/ .row -->
+
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row align-items-center">
+    
+                            <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
+                                <h2>
+                                    Publications
+                                </h2>
+                            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+    
+                            <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
+                                <p><i>A. Charitonidis, D. Tziourtzioumis, K. Kravari, and T. Kosmanis, "Marine Surveying Education by Implementing
+                                    Artificial Intelligence on Remotely Operated Underwater Vehicle Sensors" Lecture Notes in Networks and Systems, 2022,
+                                    332, pp. 110-119.</i></p>
+   
+                                <p><i>A. Charitonidis, F. Athanasiadis, A. Manolas, and T. Kosmanis, "Development and modeling of a battery system for
+                                    commercial electric bicycles," in Transport Means - Proceedings of the International Conference, 2019, vol. 2019-Octob, pp.
+                                    326–329.</i></p>
+                                                         
+                            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+    
+                        </div><!--/ .featurettes-item -->
+    
+                    </div><!--/ .col-md-12 -->
+                    
+    
+                </div><!--/ .row -->
+        </div>
+    </div><!--/ .container -->
+
+</section>	<!-- Testimonial Section-->
+
+
+<!-- End of Testimonial Section-->	<!-- Portfolio Section -->
+<section id="portfolio" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap">
+                <h2 class="section-title">A sample of my <b>Awesome</b> Works</h2>
+                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Portfolio Holder -->
+                <div class="col-md-12 portfolio-holder mt-3">
+                    <!-- Btn Filter -->
+                    <div class="filter-button-group btn-filter d-flex justify-content-center">
+                        <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
+                        <a tabindex="0" data-filter=".electronics">Electronics</a>
+                        <a tabindex="0" data-filter=".design">Design</a>
+                        <a tabindex="0" data-filter=".creative">Creative</a>
+                        <a tabindex="0" data-filter=".programming">Programming</a>
+                    </div>
+                    <!-- End of Btn Filter -->
+                    <!-- Portfolio Content -->
+                    <div class="grid-portfolio">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+                        <!-- Portfolio Item -->
+                        <div class="grid-item electronics" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/StraightGIF.gif" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=7281397A-4046-49BD-81FF-A74F8A866D59&activeView=3D" title="The SMAQ is a low-cost, robust and accurate device that can deliver a plethora of information with regards
+                                        to the air quality of a room. It can be placed anywhere inside the house as the device’s name hints (Smack it anywhere).">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://github.com/MustafaBiyikli/SMAQ" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>SMAQ</b><br> Smart Monitoring of Air Quality</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="grid-item design" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/VoltWheelsBatt.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/VoltWheelsBatt.png" title="This is part of my Undergraduate thesis where, a bike was converted to an electrically-assisted bicycle. The battery mpack was designed ground up with its encosures and relevant circuitry.">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://github.com/MustafaBiyikli/SMAQ" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>Volt Wheels</b><br> E-bike conversion kit.</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="grid-item electronics" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/VoltWheels-Board.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=7281397A-4046-49BD-81FF-A74F8A866D59&activeView=3D" title="The SMAQ is a low-cost, robust and accurate device that can deliver a plethora of information with regards
+                                        to the air quality of a room. It can be placed anywhere inside the house as the device’s name hints (Smack it anywhere).">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://github.com/MustafaBiyikli/SMAQ" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>Volt Wheels</b><br> E-bike conversion kit.</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item vintage" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/IMG_2308.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/IMG_2308.png" title="Sensor Cluster for a remotely operated undergraduate vehicle for water quality moitoring.">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="smartsea.eu" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>Kaillani</b><br>Sensor cluster for water quality monitoring.</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative " data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/IMG_2293.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/IMG_2293.png" title="Tracy Portrait">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>Internships</b><br>3D Printed Drones</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+
+                        <div class="grid-item electronics " data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/20180912_142418.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/20180912_142418.jpg" title="Tracy Portrait">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>Volt Wheels</b><br>Battery pack.</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/Bluerovs.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4><b>R.O.U.V.</b><br>Remotely Operated Underwater Vehicles.</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item electronics " data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/Drone-1.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/Drone-1.png" title="Bookself">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Hidden Book</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item programming" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/DSPGIF.gif" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/DSPGIF.gif" title="Realtime Turbulence Filtering During Pitch & Roll Manoeuvres - DSP Assignment 3">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/Drone-2.JPG" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/Drone-2.JPG" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/Drone-3.JPG" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/Drone-3.JPG" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/Smartshoe.JPG" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/Smartshoe.JPG" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/ROVGUI.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/ROVGUI.png" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/UofGThesis.png" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/UofGThesis.png" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- End of Portfolio Content -->
+                </div>
+                <!-- End of Portfolio Holder -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Portfolio Section -->	<!-- Client Section -->
+<section id="client" class="overlay bg-fixed" style="background-image: url(img/blog-1.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row ">
+                <div class="col-md-12">
+                    <!-- Section Title -->
+                    <div class="title-wrap mb-5">
+                        <h2>Graphical <span> designs</span> created:</h2>
+                    </div>
+                    <!-- End of Section Title -->
+                </div>
+                <!-- Client Holder -->
+                <div class="col-md-12 client-holder">
+                    <div class="client-slider owl-carousel">
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Badges/Professional - Drawing Tools.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Badges/Professional - Mechanical Design.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Badges/PROFESSIONAL - SHEET METAL.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Creations/sketch1579625178751.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Creations/SMAQLogoVectorTp.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Creations/Untitled.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Creations/Drone Team 1920_1080 PNG.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Creations/BIology_Lab_logo (1).png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/Creations/Volt_wheels.png" alt=" ">
+                        </div>
+                    </div>
+                    <!-- End of Client Holder -->
+                </div>
+            </div>
+        </div>
+</section>
+<!-- End of Client Section -->	<!-- Reservation Section -->
+<section id="reservation" class="bg-white section-content">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="bg-white p-5 shadow">
+                    <div class="heading-section text-center">
+                        <h2 class="mb-4">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <form method="post" name="contact-us" action="">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+                <h2 class="mb-4">
+                    Best solution to create any website. Pay once.
+                </h2>
+                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                <ul class="list-inline py-2">
+                    <li class="list-inline-item text-center">
+                        <span class="lnr fs-40 lnr-rocket"></span>
+                        <p>Fast delivery</p>
+                    </li>
+                    <li class="list-inline-item text-center">
+                        <span class="lnr fs-40 lnr-magic-wand"></span>
+                        <p>Awesome design</p>
+                    </li>
+                    <li class="list-inline-item text-center">
+                        <span class="lnr fs-40 lnr-cog"></span>
+                        <p>Easy to customize</p>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-link p-0">
+                    <span>PURCHASE NOW</span>
+                    <span class="lnr lnr-arrow-right"></span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="heading-section text-center">
+                <h2>
+                    User Testimonials
+                </h2>
+            </div>
+            <div class="row">
+                <!-- Testimonial -->
+                <div class="testi-content testi-carousel owl-carousel">
+                    <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text"><b>ALEX</b> is best theme i used so far.<br> It’s ideal for guys without coding knowledge like me!</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
+                            </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
+                            </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
+                            </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Testimonial -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End of Reservation Section -->	<!-- Features Section-->
+<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-2">Make a beautiful website, or million of them</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p>
+                    <a class="btn btn-outline-primary btn-lg">FEATURES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section--></div>
+<footer class="mastfoot my-3">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		
+         	</div>
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		<p class="mx-auto text-center mb-0">&copy; 2022 Roxy. Design by Alexandros Charitonidis</a>.</p>
+         	</div>
+           
+            <div class="col-lg-4 col-md-12">
+            	<nav class="nav nav-mastfoot justify-content-center">
+	                <a class="nav-link" href="https://www.linkedin.com/in/alexandros-charitonidis/" target="_blank">
+	                	<i class="fab fa-linkedin"></i>
+	                </a>
+	                <a class="nav-link" href="#" target="_blank">
+	                	<i class="fab fa-twitter"></i>
+	                </a>
+	                <a class="nav-link" href="https://www.researchgate.net/profile/Alexandros-Charitonidis" target="_blank">
+	                	<i class="fab fa-researchgate"></i>
+	                </a>
+	                <a class="nav-link" href="https://github.com/Alexandros-Charitonidis" target="_blank">
+	                	<i class="fab fa-github"></i>
+	                </a>
+	                <a class="nav-link" href="https://www.youtube.com/watch?v=-S1iXpoRs1U&list=PLxWwb-b9LnpDDPuT1kDrrdeanTL8E0yw1&index=23" target="_blank">
+	                	<i class="fab fa-youtube"></i>
+	                </a>
+	            </nav>
+            </div>
+            
+        </div>
+    </div>
+</footer>	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        
+        var typed = new Typed('.animate',{
+            strings: [
+                "Hello, my name is Alexandros and welcome to my portfolio^3000",
+                "Here you shall see some of my:^1000",
+                "Achievements^1000",
+                "Designs^1000",
+                "Projects^1000",
+                "essentially, my resume.^1000"
+            ],
+            smartBackspace:true,
+            typeSpeed: 30,
+            pause:true,
+            backSpeed: 10,
+            loop: false
+
+        });
+                        
+    </script>
+    
+
+</body>
 </html>
