@@ -430,16 +430,15 @@ section {
     transform: translateY(-13px); }
 
 .progress-bar {
-  background-color: #ff00cc; }
+  background-color: #0073ff; }
 
 /*=====  End of FEATURES  ======*/
 /*=============================
 =            TESTI            =
 =============================*/
 .testi-img img {
-  height: 60px;
-  width: 60px !important;
-  border-radius: 50%;
+  height: 50vh;
+  width: 50vh !important;
   display: inline-block !important; }
 
 .testi-details {
@@ -451,7 +450,7 @@ section {
   padding-bottom: 50px; }
 
 .testi-icon {
-  color: #ff00cc; }
+  color: #0073ff; }
 
 .testi-content {
   margin-top: 80px;
@@ -696,6 +695,10 @@ section {
   .blog-meta a {
     color: #939393; }
 
+.blog-desc{
+  text-align: justify;
+  
+}
 .blog-author {
   display: inline-block;
   color: #939393; }
@@ -762,9 +765,9 @@ section {
     width: 100%;
     background: #ff00cc;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: -webkit-linear-gradient(to right, #333399, #0894ff);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #0894ff);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 11; }
   #header-navbar {
